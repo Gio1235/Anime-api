@@ -1,0 +1,106 @@
+body
+{
+   margin: 0px;
+   padding-inline-end: 0px;
+}
+
+.d-block
+{
+    max-height: 600px;
+    object-fit: cover;
+    opacity: 0.6;
+}
+.slider-area
+{
+background: black;
+position: relative;
+}
+.search-area
+{
+    position: absolute;
+    bottom: 100px;
+    left: 0px;
+    right: 0px;  
+}
+.search-area .from-group{
+    width: 450px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.search-area .from-group input{
+background:rgba(255,255,255, 0.1);
+border: 1px solid#fff;
+margin-right: 7px;
+color:rgba(255,255,255);
+}
+
+.search-area .from-group input::placeholder{
+    color: #fff;
+    margin: 0px 1% 25px 1% ;
+}
+.card{
+    width: 31%;
+    margin: 0px 1% 25px 1%;
+    background: black;
+    border: 1px solid rgb(150, 150,150);
+}
+
+.card img
+{
+ width: 100%;
+ height: 240px;
+ object-fit: cover;
+ opacity: 0.6;
+}
+
+.search-result-area .card-area .card-body{
+    position: relative;
+    background: #fff;
+}
+.search-result-area h1{
+    text-align: center;
+    letter-spacing: 2px;
+    margin: 40px 0px;
+}
+    
+.search-result-area .card-area .card-title{
+    position: absolute;
+    top: -55px; 
+    left: 20px;
+    right: 0px;
+    color: #fff;
+    letter-spacing: 2px;
+}
+
+.search-result-area{
+    width: 80%;
+    margin: auto;
+}
+
+.search-result-area .card-area{
+ margin-top: 25px;
+ display: flex;
+ flex-wrap: wrap;
+}
+
+
+@media screen and (max-width:700px){
+    .search-area .from-group{
+        width: 93%;
+
+    }
+    .search-result-area{
+        width: 96%;
+    }
+    .card {
+        width: 93%;
+        margin: 10px 0px;
+    }
+    .search-area{
+        flex-direction: column;
+        z-index: 10;
+    }
+}
